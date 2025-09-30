@@ -48,22 +48,45 @@
             margin-bottom: 40px;
         }
 
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
         .btn {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
             padding: 18px 40px;
-            background: linear-gradient(135deg, #1B4F72, #3498DB);
-            color: white;
             text-decoration: none;
             border-radius: 12px;
             font-size: 1.1em;
             font-weight: 600;
             transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #1B4F72, #3498DB);
+            color: white;
             box-shadow: 0 5px 20px rgba(27, 79, 114, 0.3);
         }
 
-        .btn:hover {
+        .btn-primary:hover {
             transform: translateY(-3px);
             box-shadow: 0 8px 30px rgba(27, 79, 114, 0.5);
+        }
+
+        .btn-danger {
+            background: linear-gradient(135deg, #E74C3C, #C0392B);
+            color: white;
+            box-shadow: 0 5px 20px rgba(231, 76, 60, 0.3);
+        }
+
+        .btn-danger:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(231, 76, 60, 0.5);
         }
 
         .footer {
@@ -95,9 +118,17 @@
         <h1>سماء الروايات</h1>
         <p class="subtitle">Sky Novels</p>
         
-        <a href="privacy-policy.html" class="btn">
-            🔒 سياسة الخصوصية
-        </a>
+        <div class="buttons">
+            <a href="privacy-policy.html" class="btn btn-primary">
+                <span>🔒</span>
+                <span>سياسة الخصوصية</span>
+            </a>
+            
+            <a href="account-deletion.html" class="btn btn-danger">
+                <span>🗑️</span>
+                <span>حذف الحساب</span>
+            </a>
+        </div>
 
         <div class="footer">
             <p>© 2025 سماء الروايات</p>
