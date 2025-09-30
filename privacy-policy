@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سياسة الخصوصية - سماء الروايات</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1B4F72, #3498DB);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .update-info {
+            background: #E3F2FD;
+            padding: 15px 20px;
+            border-radius: 10px;
+            border-right: 5px solid #2196F3;
+            margin-bottom: 30px;
+            font-weight: 600;
+            color: #1976D2;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            border-right: 5px solid #1B4F72;
+        }
+
+        .section-title {
+            color: #1B4F72;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title::before {
+            content: "•";
+            margin-left: 10px;
+            color: #3498DB;
+            font-size: 1.5em;
+        }
+
+        .section-content {
+            color: #555;
+            font-size: 1.05em;
+            white-space: pre-line;
+        }
+
+        .important-box {
+            background: linear-gradient(135deg, #d4edda, #c3e6cb);
+            padding: 25px;
+            border-radius: 15px;
+            border: 2px solid #28a745;
+            margin: 30px 0;
+        }
+
+        .important-box h3 {
+            color: #155724;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .important-box ul {
+            list-style: none;
+            padding-right: 0;
+        }
+
+        .important-box li {
+            padding: 8px 0;
+            color: #155724;
+        }
+
+        .important-box li::before {
+            content: "✓ ";
+            color: #28a745;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #1B4F72, #3498DB);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .contact-section h3 {
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        .contact-item {
+            display: inline-block;
+            margin: 10px 20px;
+            padding: 15px 30px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s;
+        }
+
+        .contact-item:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            background: #1B4F72;
+            color: white;
+        }
+
+        a {
+            color: #3498DB;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .content {
+                padding: 20px 15px;
+            }
+
+            .section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔒 سياسة الخصوصية</h1>
+            <p>سماء الروايات - Sky Novels</p>
+            <p style="font-size: 0.9em; margin-top: 10px;">خصوصيتك أولويتنا القصوى</p>
+        </div>
+
+        <div class="content">
+            <div class="update-info">
+                📅 آخر تحديث: 30 سبتمبر 2025
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">1. المقدمة</h2>
+                <div class="section-content">
+مرحباً بك في تطبيق "سماء الروايات". نحن نحترم خصوصيتك ونلتزم بحماية بياناتك الشخصية. توضح هذه السياسة كيفية جمع واستخدام وحماية معلوماتك عند استخدام تطبيقنا.
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">2. البيانات التي نجمعها</h2>
+                <div class="section-content">
+نجمع الحد الأدنى من البيانات اللازمة لتشغيل التطبيق:
+
+- معلومات الحساب (اختيارية):
+  - اسم المستخدم
+  - البريد الإلكتروني
+  - كلمة المرور (مشفرة بالكامل)
+
+- بيانات الاستخدام المحلية:
+  - الروايات المفضلة
+  - الفصول المقروءة
+  - سجل القراءة
+  - إعدادات القارئ الشخصية
+
+- معلومات الجهاز الأساسية:
+  - نوع الجهاز ونظام التشغيل
+  - معرف الجهاز الفريد (للإعلانات فقط)
+
+⚠️ ملاحظة: يمكنك استخدام التطبيق كزائر دون الحاجة لإنشاء حساب.
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">3. كيف نستخدم بياناتك</h2>
+                <div class="section-content">
+نستخدم معلوماتك فقط للأغراض التالية:
+
+✓ حفظ تقدمك في القراءة ومزامنته بين الأجهزة
+✓ حفظ الروايات والفصول المفضلة لديك
+✓ تذكر إعدادات القراءة المخصصة
+✓ إرسال إشعارات اختيارية عن الفصول الجديدة
+✓ تحسين أداء التطبيق وتجربة الاستخدام
+
+⚠️ نحن لا نستخدم:
+✗ أدوات تحليل سلوك المستخدم
+✗ Google Analytics أو Firebase Analytics
+✗ أي أدوات تتبع خارجية
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">4. الإعلانات - Google AdMob</h2>
+                <div class="section-content">
+يستخدم التطبيق خدمة Google AdMob لعرض إعلانات متنوعة:
+
+📌 ما تجمعه Google AdMob:
+- معرف الإعلانات الخاص بجهازك
+- عنوان IP مجهول المصدر
+- معلومات مجهولة عن تفاعلك مع الإعلانات
+
+📌 للتحكم بالإعلانات:
+يمكنك إيقاف الإعلانات المخصصة من إعدادات جهازك
+
+📌 لمعرفة المزيد:
+<a href="https://policies.google.com/technologies/ads" target="_blank">سياسة Google للإعلانات</a>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">5. أمان وحماية البيانات</h2>
+                <div class="section-content">
+نتخذ إجراءات صارمة لحماية خصوصيتك:
+
+🔒 التشفير الكامل:
+- جميع كلمات المرور مشفرة بالكامل على الخادم
+- لا يمكن لأي شخص (حتى المطورين) الوصول لكلمات المرور
+- استخدام بروتوكول HTTPS لجميع الاتصالات
+
+🛡️ التخزين الآمن:
+- البيانات محفوظة على خوادم محمية
+- النسخ الاحتياطية المنتظمة
+
+✅ الشفافية الكاملة:
+- لا نبيع بياناتك لأي طرف ثالث
+- لا نشارك معلوماتك مع جهات خارجية
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">6. مشاركة البيانات</h2>
+                <div class="section-content">
+⛔ لا نشارك بياناتك الشخصية مع أي طرف ثالث إطلاقاً
+
+الاستثناء الوحيد:
+- Google AdMob فقط (لعرض الإعلانات)
+
+✓ لن نبيع أو نؤجر أو نتاجر ببياناتك
+✓ لا نستخدم أي خدمات تحليلات خارجية
+✓ لا توجد تكاملات مع شبكات تواصل تتبع بياناتك
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">7. حقوقك وخياراتك</h2>
+                <div class="section-content">
+لديك السيطرة الكاملة على بياناتك:
+
+✅ الاستخدام كزائر:
+يمكنك استخدام التطبيق دون إنشاء حساب
+
+✅ إدارة حسابك:
+- الوصول إلى جميع بياناتك
+- تعديل معلوماتك
+- تصدير بياناتك
+
+✅ حذف البيانات:
+- حذف الحساب من إعدادات التطبيق
+- حذف جميع البيانات خلال 30 يوماً
+
+✅ تسجيل الخروج:
+إمكانية تسجيل الخروج في أي وقت
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">8. خصوصية الأطفال</h2>
+                <div class="section-content">
+التطبيق غير موجه للأطفال دون سن 13 عاماً.
+
+- لا نجمع عن قصد معلومات من الأطفال
+- إذا اكتشفنا جمع بيانات من طفل، سنحذفها فوراً
+- ننصح الآباء بمراقبة استخدام أطفالهم
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">9. الموقع الجغرافي</h2>
+                <div class="section-content">
+⚠️ لا نجمع أو نستخدم بيانات الموقع الجغرافي
+
+- التطبيق لا يطلب صلاحية الموقع
+- لا نتتبع موقعك بأي شكل
+                </div>
+            </div>
+
+            <div class="important-box">
+                <h3>✅ التزامنا تجاهك</h3>
+                <ul>
+                    <li>لا نبيع بياناتك الشخصية</li>
+                    <li>لا نستخدم أدوات تحليل أو تتبع خارجية</li>
+                    <li>يمكنك استخدام التطبيق كزائر دون حساب</li>
+                    <li>يمكنك حذف حسابك وبياناتك بالكامل في أي وقت</li>
+                    <li>جميع كلمات المرور مشفرة ولا يمكن لأحد رؤيتها</li>
+                </ul>
+            </div>
+
+            <div class="contact-section">
+                <h3>📞 التواصل معنا</h3>
+                <p style="margin-bottom: 20px;">نحن هنا للإجابة على جميع استفساراتك</p>
+                <div>
+                    <a href="mailto:skynovel12@gmail.com" class="contact-item">
+                        📧 skynovel12@gmail.com
+                    </a>
+                    <div class="contact-item">
+                        💬 Discord: m7s1n
+                    </div>
+                </div>
+                <p style="margin-top: 20px; font-size: 0.9em;">
+                    نلتزم بالرد خلال 48 ساعة
+                </p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">روابط مفيدة</h2>
+                <div class="section-content">
+- <a href="https://policies.google.com/privacy" target="_blank">سياسة Google للخصوصية</a>
+- <a href="https://policies.google.com/technologies/ads" target="_blank">سياسة Google للإعلانات</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><strong>سماء الروايات - Sky Novels</strong></p>
+            <p style="margin-top: 10px;">جميع الحقوق محفوظة © 2025</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">
+                تطبيق لقراءة الروايات العربية والمترجمة
+            </p>
+        </div>
+    </div>
+</body>
+</html>
