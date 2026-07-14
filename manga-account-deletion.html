@@ -1,0 +1,423 @@
+<!-- manga-account-deletion.html -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حذف الحساب - سماء المانها</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #E74C3C, #C0392B);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .warning-box {
+            background: #FFF3CD;
+            border: 2px solid #FFC107;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            color: #856404;
+        }
+
+        .warning-box h3 {
+            margin-bottom: 10px;
+            color: #856404;
+            font-size: 1.2em;
+        }
+
+        .warning-box ul {
+            margin-right: 20px;
+            margin-top: 10px;
+        }
+
+        .warning-box li {
+            margin: 8px 0;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section-title {
+            color: #1B4F72;
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-content {
+            color: #555;
+            font-size: 1.05em;
+            white-space: pre-line;
+        }
+
+        .steps {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .step:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .step-number {
+            background: linear-gradient(135deg, #1B4F72, #3498DB);
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-left: 15px;
+            flex-shrink: 0;
+        }
+
+        .step-content h4 {
+            color: #1B4F72;
+            margin-bottom: 8px;
+        }
+
+        .step-content p {
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .info-box {
+            background: #E3F2FD;
+            border-right: 4px solid #2196F3;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .info-box h4 {
+            color: #1976D2;
+            margin-bottom: 10px;
+        }
+
+        .info-box p {
+            color: #555;
+            font-size: 0.95em;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #1B4F72, #3498DB);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .contact-box h3 {
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .contact-item {
+            display: inline-block;
+            margin: 10px 15px;
+            padding: 12px 25px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .contact-item:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #1B4F72, #3498DB);
+            color: white;
+            flex: 1;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(27, 79, 114, 0.3);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #1B4F72;
+            border: 2px solid #1B4F72;
+            flex: 1;
+        }
+
+        .btn-secondary:hover {
+            background: #1B4F72;
+            color: white;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 25px;
+            background: #1B4F72;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .header h1 {
+                font-size: 1.5em;
+            }
+            
+            .content {
+                padding: 25px 20px;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-icon">🗑️</div>
+            <h1>حذف الحساب والبيانات</h1>
+            <p>سماء المانها - Sky Manga</p>
+        </div>
+
+        <div class="content">
+            <div class="warning-box">
+                <h3>⚠️ تنبيه هام</h3>
+                <p>حذف الحساب عملية <strong>نهائية ولا يمكن التراجع عنها</strong>. عند حذف حسابك سيتم:</p>
+                <ul>
+                    <li>حذف جميع بياناتك الشخصية بشكل دائم</li>
+                    <li>حذف قائمة المفضلات وسجل القراءة</li>
+                    <li>حذف إعدادات التطبيق المخصصة</li>
+                    <li>إلغاء ربط الحساب من جميع الأجهزة</li>
+                    <li>فقدان القدرة على استرجاع البيانات</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">
+                    <span>📋</span>
+                    <span>طريقة حذف الحساب من التطبيق</span>
+                </h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>افتح التطبيق</h4>
+                            <p>قم بتشغيل تطبيق سماء المانها على هاتفك</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>اذهب إلى الإعدادات</h4>
+                            <p>اضغط على أيقونة القائمة (☰) ثم اختر "الإعدادات"</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>اختر "إدارة الحساب"</h4>
+                            <p>انتقل إلى قسم إدارة الحساب في الإعدادات</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>اضغط "حذف الحساب"</h4>
+                            <p>ستظهر رسالة تأكيد، اقرأها جيداً</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h4>أكد الحذف</h4>
+                            <p>اضغط "تأكيد" لحذف حسابك نهائياً</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">
+                    <span>⏱️</span>
+                    <span>المدة الزمنية</span>
+                </h2>
+                <div class="section-content">
+سيتم حذف حسابك وجميع بياناتك خلال <strong>30 يوماً</strong> من طلب الحذف.
+
+خلال هذه الفترة:
+- لن تتمكن من الوصول إلى حسابك
+- سيتم حذف جميع البيانات المرتبطة بحسابك تدريجياً
+- بعد 30 يوماً، سيتم حذف كل شيء نهائياً ولا يمكن استرجاعه
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h4>💡 هل تريد الاحتفاظ بالمفضلات فقط؟</h4>
+                <p>
+                    يمكنك تسجيل الخروج بدلاً من حذف الحساب. عند تسجيل الخروج، ستبقى بياناتك محفوظة ويمكنك العودة في أي وقت.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">
+                    <span>📧</span>
+                    <span>طلب حذف الحساب عبر البريد الإلكتروني</span>
+                </h2>
+                <div class="section-content">
+إذا لم تتمكن من الوصول إلى التطبيق، يمكنك طلب حذف حسابك عبر البريد الإلكتروني:
+
+<strong>المعلومات المطلوبة:</strong>
+1. البريد الإلكتروني المرتبط بالحساب
+2. اسم المستخدم
+3. سبب طلب الحذف (اختياري)
+
+أرسل طلبك إلى: <a href="mailto:skynovel12@gmail.com" style="color: #3498DB;">skynovel12@gmail.com</a>
+
+<strong>الموضوع:</strong> طلب حذف حساب سماء المانها
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">
+                    <span>❓</span>
+                    <span>الأسئلة الشائعة</span>
+                </h2>
+                <div class="section-content">
+<strong>س: هل يمكنني استرجاع حسابي بعد الحذف؟</strong>
+ج: لا، الحذف نهائي ولا يمكن التراجع عنه بعد مرور 30 يوماً.
+
+<strong>س: ماذا يحدث لبياناتي بعد الحذف؟</strong>
+ج: يتم حذف جميع بياناتك الشخصية بشكل دائم من خوادمنا خلال 30 يوماً.
+
+<strong>س: هل يمكنني إنشاء حساب جديد بنفس البريد الإلكتروني؟</strong>
+ج: نعم، بعد اكتمال عملية الحذف (30 يوماً) يمكنك إنشاء حساب جديد.
+
+<strong>س: هل سيتم حذف بياناتي من Google AdMob؟</strong>
+ج: بيانات الإعلانات تخضع لسياسة Google. يمكنك إدارتها من إعدادات جهازك.
+
+<strong>س: هل يمكنني استخدام التطبيق كزائر بعد حذف حسابي؟</strong>
+ج: نعم، يمكنك الاستمرار في استخدام التطبيق كزائر دون حساب.
+                </div>
+            </div>
+
+            <div class="contact-box">
+                <h3>📞 تحتاج مساعدة؟</h3>
+                <p style="margin-bottom: 15px;">تواصل معنا للحصول على المساعدة</p>
+                <a href="mailto:skynovel12@gmail.com" class="contact-item">
+                    📧 skynovel12@gmail.com
+                </a>
+                <div class="contact-item">
+                    💬 Discord: m7s1n
+                </div>
+                <p style="margin-top: 15px; font-size: 0.9em;">
+                    نلتزم بالرد خلال 48 ساعة
+                </p>
+            </div>
+
+            <div class="button-group">
+                <a href="index.html" class="btn btn-secondary">
+                    ← الرجوع للصفحة الرئيسية
+                </a>
+                <a href="manga-privacy-policy.html" class="btn btn-primary">
+                    📄 سياسة الخصوصية
+                </a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><strong>سماء المانها - Sky Manga</strong></p>
+            <p style="margin-top: 10px;">© 2025 جميع الحقوق محفوظة</p>
+        </div>
+    </div>
+</body>
+</html>
